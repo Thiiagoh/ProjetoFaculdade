@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Acessando o sistema!</title>
+        <title>Alterar dados do usúario!</title>
 	<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -29,11 +29,11 @@
             </button>
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home<span class="sr-only">(página atual)</span></a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="alterarDados.php">Alterações</a>
+                    <a class="nav-link" href="acesso.php">Home<span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Alterações</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Alguma Coisa Futura</a>

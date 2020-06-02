@@ -16,10 +16,7 @@
             session_start();
             if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)){
                 session_unset();
-                echo "<script>
-                    alert('Esta página só pode ser acessada por usuário logado');
-                    window.location.href = 'index.html';
-                    </script>";
+                echo "<script>alert('Esta página só pode ser acessada por usuário logado');window.location.href = 'index.html';</script>";
             }
             $logado = $_SESSION['email'];
         ?>
@@ -32,18 +29,17 @@
                     <a href="desconectar.php"><button align="center" class="login100-form-btn">Desconectar</button></a>
                 </div>  
             </div>
-	    </div>
-        
+	</div>
         <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	    <script src="vendor/bootstrap/js/popper.js"></script>
-	    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	    <script src="vendor/select2/select2.min.js"></script>
-	    <script src="vendor/tilt/tilt.jquery.min.js"></script>
-	    <script>
-		    $('.js-tilt').tilt({
-			    scale: 1.1
-		    })
-	    </script>
-	    <script src="js/main.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script>
+            $('.js-tilt').tilt({
+        	scale: 1.1
+            });
+	</script>
+	<script src="js/main.js"></script>
     </body>
 </html>

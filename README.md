@@ -1,2 +1,2 @@
 # ProjetoFaculdade
-Nome: Thiago almeida da silva e Beatriz
+Nome: Thiago e Beatriz

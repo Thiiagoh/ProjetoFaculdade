@@ -29,23 +29,21 @@
             <div class="container-login100">
                 <span class="login100-form-title">Mapa</span>
                 <div>
-                    <iframe width="600" height="450" frameborder="0" style="border:0"
-                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDESK2WzehKsr3PBY72y6DhgFzTscYEj6I&q=Brasilia+DF" allowfullscreen>
-                    </iframe>
-                  <a href="desconectar.php"><button align="center" class="login100-form-btn">Desconectar</button></a>
+                    <a href="desconectar.php"><button align="center" class="login100-form-btn">Desconectar</button></a>
                 </div>  
             </div>
-	</div>
+	    </div>
+        
         <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="vendor/select2/select2.min.js"></script>
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-	<script src="js/main.js"></script>
+	    <script src="vendor/bootstrap/js/popper.js"></script>
+	    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	    <script src="vendor/select2/select2.min.js"></script>
+	    <script src="vendor/tilt/tilt.jquery.min.js"></script>
+	    <script>
+		    $('.js-tilt').tilt({
+			    scale: 1.1
+		    })
+	    </script>
+	    <script src="js/main.js"></script>
     </body>
 </html>

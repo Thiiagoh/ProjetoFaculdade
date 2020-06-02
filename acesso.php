@@ -22,7 +22,7 @@
         ?>
     </head>
     <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
@@ -51,7 +51,7 @@
                     <a class="nav-link disabled" href="#">Desativado</a>
                 </li>
             </ul>
-                <a href="desconectar.php"><button class="btn btn-outline-success my-2 my-sm-0">Desconectar</button></a>
+                <a href="desconectar.php"><button class="btn btn-outline-secondary my-2 my-sm-0">Desconectar</button></a>
             </div>
         </nav>
         <script src="vendor/jquery/jquery-3.2.1.min.js"></script>

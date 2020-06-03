@@ -23,9 +23,9 @@
                     <span class="login100-form-title p-b-51">Mensagem do sistema</span>
                     <?php
                         //Receber as informações via formulario
-                        $email = $_GET['email'];
-                        $senha = $_GET['senha'];
-                        $senha2 = $_GET['senha2'];
+                        $email = $_POST['email'];
+                        $senha = $_POST['senha'];
+                        $senha2 = $_POST['senha2'];
 
                         //Conectar no mysql
                         $nome_servidor = "sql10.freesqldatabase.com";

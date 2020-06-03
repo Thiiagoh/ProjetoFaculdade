@@ -1,8 +1,8 @@
 <?php
     session_start();
     
-    $login = $_GET['email'];
-    $senha = $_GET['senha'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
     $local="sql10.freesqldatabase.com";
     $usuario_BD="sql10345169";
@@ -14,10 +14,10 @@
         die("Deu erro na conexão ". $tenta_conectar->connect_error);
     }
     
-    $tenta_achar = "SELECT * FROM clientes WHERE email='$login' AND senha='$senha'";
+    $tenta_achar = "SELECT * FROM clientes WHERE email='$email' AND senha='$senha'";
     $resultado = $tenta_conectar->query($tenta_achar);
     if ($resultado->num_rows > 0){
-        $_SESSION['email'] = $login;
+        $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senha;
         header('location:acesso.php');
     }

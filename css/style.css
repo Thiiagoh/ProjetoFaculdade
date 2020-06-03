@@ -47,6 +47,11 @@
     color: #fff;
 }
 
+.main .subtitle{
+    color: #fff;
+    opacity: .6;
+}
+
 .main .list{
     padding: 0px 7px;
 }

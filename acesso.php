@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
         <link rel="stylesheet" type="text/css" href="css/util.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <?php 
             session_start();
             if((!isset($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)){

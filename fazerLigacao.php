@@ -1,8 +1,8 @@
 <?php
     session_start();
     
-    $login=$_GET['email'];
-    $senha=$_GET['senha'];
+    $login = $_GET['email'];
+    $senha = $_GET['senha'];
 
     $local="sql10.freesqldatabase.com";
     $usuario_BD="sql10345169";

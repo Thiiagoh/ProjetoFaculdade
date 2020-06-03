@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Entrar no sistema!</title>
+        <title>Criar usuário!</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -20,8 +20,8 @@
         <div class="limiter">
             <div class="container-login100">
                 <div class="wrap-login100 p-t-50 p-b-90">
-                    <form class="login100-form validate-form flex-sb flex-w" action="fazerLigacao.php" method="GET">
-                        <span class="login100-form-title p-b-51">Acessar o sistema</span>
+                    <form class="login100-form validate-form flex-sb flex-w" action="cadastro.php" method="GET">
+                        <span class="login100-form-title p-b-51">Criar um usuário</span>
                         <div class="wrap-input100 validate-input m-b-16" data-validate = "Email de usuário é requerido">
                             <input class="input100" type="email" name="email" placeholder="Email">
                             <span class="focus-input100"></span>
@@ -30,17 +30,12 @@
                             <input class="input100" type="password" name="senha" placeholder="Senha">
                             <span class="focus-input100"></span>
                         </div>
-                        <div class="flex-sb-m w-full p-t-3 p-b-24">
-                            <div class="contact100-form-checkbox">
-                                <input class="input-checkbox100" id="ckb1" type="checkbox" name="Lembrar">
-				<label class="label-checkbox100" for="ckb1">Lembrar</label>
-                            </div>
-                            <div>
-                                <a href="criar.html" class="txt1"><i>criar uma conta!</i></a>
-                            </div>
+                        <div class="wrap-input100 validate-input m-b-16" data-validate = "Senha requerida">
+                            <input class="input100" type="password" name="senha2" placeholder="Comfirmar senha">
+                            <span class="focus-input100"></span>
                         </div>
                         <div class="container-login100-form-btn m-t-17">
-                            <button class="login100-form-btn">Entrar</button>
+                            <button class="login100-form-btn">Cadastrar</button>
                         </div>
                     </form>
         	</div>

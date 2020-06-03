@@ -64,7 +64,7 @@
                             <span class="focus-input100"></span>
                         </div>
                         <div class="wrap-input100 validate-input m-b-16" data-validate = "Senha requerida">
-                            <input class="input100" type="password" name="senha2" placeholder="Senha á ser alterada">
+                            <input class="input100" type="password" name="senha2" placeholder="Senha a ser alterada">
                             <span class="focus-input100"></span>
                         </div>
                         <div class="container-login100-form-btn m-t-17">

@@ -35,18 +35,23 @@
                         $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
                         //Pegar Dado do Banco
                         $tenta_achar = "SELECT * FROM clientes WHERE email='{$email}' AND senha='{$senha}'";
-                        $row = $resultado = $conecta->query($tenta_achar);
-                        $row = $resultado->fetch_assoc();
-                        $user = $row['senha'];
-                        //Verificar se a senha do banco é igual ao que o usuário informou
-                        if ($user=$row['senha'] == $senha){
-                            $sql = "UPDATE clientes SET senha='$senha2' WHERE email='$email'";
-                            if ($conecta->query($sql) === TRUE)
-                                echo "Senha alterada com sucesso!<br><br>";
-                            else
-                                echo "Erro na atualização do registro: " . $conecta->error."<br><br>";
-                        }else
-                            echo 'As senhas não correspondem';
+                        $resultados = $conecta->query($tenta_achar);
+                        if ($resultados->num_rows <= 0){
+                            echo 'Nenhum usuário encontrado!<br><br>';
+                        }else{
+                            $row = $resultado = $conecta->query($tenta_achar);
+                            $row = $resultado->fetch_assoc();
+                            $user = $row['senha'];
+                            //Verificar se a senha do banco é igual ao que o usuário informou
+                            if ($user=$row['senha'] == $senha){
+                                $sql = "UPDATE clientes SET senha='$senha2' WHERE email='$email'";
+                                if ($conecta->query($sql) === TRUE)
+                                    echo "Senha alterada com sucesso!<br><br>";
+                                else
+                                    echo "Erro na atualização do registro: " . $conecta->error."<br><br>";
+                            }else
+                                echo 'As senhas não correspondem';
+                        }
                         $conecta->close();
                     ?>
                     <a href="desconectar.php"><button class="login100-form-btn">Voltar</button></a>

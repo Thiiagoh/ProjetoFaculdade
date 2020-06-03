@@ -22,58 +22,47 @@
         ?>
     </head>
     <body>
-               
-        <?php
-            //Receber as informações via formulario
-            $id = $_GET['id'];
-                    
-            //Conectar no mysql
-            $nome_servidor = "localhost";
-            $nome_usuario = "root";
-            $senhaBanco = "";
-            $nome_banco = "cadastro";
-            $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
-            
-            //Inserir registro 
-            if (empty($id)){
-                echo 'O campo esta vazio, escreva algo.';
-            }else{
-                $sql = "DELETE FROM usuarios WHERE id='$id'";
-                if ($conecta->query($sql) === TRUE) {
-                    echo "Usuario apagado com sucesso.<br>";
-                }else {
-                    echo "Erro ao apagar o usuario: " . $conecta->error."<br>";
-                }
-            }
-            $conecta->close();
-        ?>
-        
-        
-        <div class="limiter">
+         <div class="limiter">
             <div class="container-login100">
                 <div class="wrap-login100 p-t-50 p-b-90">
-                    <form class="login100-form validate-form flex-sb flex-w" action="excluirConta.php" method="POST">
-                        <span class="login100-form-title p-b-51">Excluir Conta</span>
-                        <div class="wrap-input100 validate-input m-b-16" data-validate = "Email de usuário é requerido">
-                            <input class="input100" type="email" name="email" placeholder="Email">
-                            <span class="focus-input100"></span>
-                        </div>
-                        <div class="wrap-input100 validate-input m-b-16" data-validate = "Senha requerida">
-                            <input class="input100" type="password" name="senha" placeholder="Senha Atual">
-                            <span class="focus-input100"></span>
-                        </div>
-                        <div class="wrap-input100 validate-input m-b-16" data-validate = "Senha requerida">
-                            <input class="input100" type="password" name="senha2" placeholder="Senha á ser alterada">
-                            <span class="focus-input100"></span>
-                        </div>
-                        <div class="container-login100-form-btn m-t-17">
-                            <button class="login100-form-btn">Excluir</button>
-                        </div>
-                    </form>
+                    <span class="login100-form-title p-b-51">Mensagem do sistema</span>       
+                        <?php
+                            //Receber as informações via formulario
+                            $email = $_POST['email'];
+                            $senha = $_POST['senha'];
+                            $senha2 = $_POST['senha2'];
+
+                            //Conectar no mysql
+                            $nome_servidor = "sql10.freesqldatabase.com";
+                            $nome_usuario = "sql10345169";
+                            $senhaBanco = "UAzvU32VSN";
+                            $nome_banco = "sql10345169";
+                            $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
+                            //Pegar Dado do Banco
+                            $tenta_achar = "SELECT * FROM clientes WHERE email='{$email}' AND senha='{$senha}'";
+                            $resultados = $conecta->query($tenta_achar);
+                            if ($resultados->num_rows <= 0){
+                                echo 'Nenhum usuário encontrado!<br><br>';
+                            }else{
+                                $row = $resultado = $conecta->query($tenta_achar);
+                                $row = $resultado->fetch_assoc();
+                                $user = $row['senha'];
+                                //Verificar se a senha do banco é igual ao que o usuário informou
+                                if ($user=$row['senha'] == $senha){
+                                    $sql = "DELETE FROM clientes WHERE email='$email'";
+                                    if ($conecta->query($sql) === TRUE)
+                                        echo "Usuário apagado com sucesso!<br><br>";
+                                    else
+                                        echo "Erro ao apagar o usuario: " . $conecta->error."<br><br>";
+                                }else
+                                    echo 'As senhas não correspondem';
+                            }
+                            $conecta->close();
+                        ?>
+                    <a href="desconectar.php"><button class="login100-form-btn">Voltar</button></a>
         	</div>
             </div>
     	</div>
-        
         <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>

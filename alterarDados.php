@@ -32,32 +32,25 @@
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="acesso.php">Home<span class="sr-only">(página atual)</span></a>
+                    <a class="nav-link" href="#">Principal<span class="sr-only">(página atual)</span></a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Alterações</a>
+                
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Alterações
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="alterarDados.php">Alterar Senha</a>
+                        <a class="dropdown-item" href="excluirConta.php">Excluir Conta</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Alguma Coisa Futura</a>
-                </li>
+                
             </ul>
                 <a href="desconectar.php"><button class="btn btn-outline-secondary my-2 my-sm-0">Desconectar</button></a>
             </div>
         </nav>
         
-        <div class="pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <h5 class="text-white h4">Conteúdo expandido</h5>
-                    <span class="text-muted">Expansível, atráves da marca no navbar.</span>
-                 </div>
-            </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-        </div>
+        
         
         <div class="limiter">
             <div class="container-login100">

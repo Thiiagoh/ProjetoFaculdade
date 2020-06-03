@@ -49,6 +49,129 @@
             </div>
         </nav>
         
+        <div id="main" class="main d-flex flex-column">
+            <div class="margin-top"></div>
+            <div class="main-container">
+                <h2 class="title mb-3">Lançado recentemente</h2>
+                <div class="row list mb-5">
+                    
+                    <div class="col-12 col-md-3 col-lg-2">
+                        <div class="card">
+                            <a href="">
+                                <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                            </a>
+                            <div class="card-body p-0">
+                                <a href="">
+                                    <h5 class="card-title">Teste</h5>
+                                    <p class="card-text">Teste</p>
+                                </a>
+                            </div>
+                            <div class="btn-play">
+                                <button class="d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-3 col-lg-2">
+                        <div class="card">
+                            <a href="">
+                                <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                            </a>
+                            <div class="card-body p-0">
+                                <a href="">
+                                    <h5 class="card-title">Teste</h5>
+                                    <p class="card-text">Teste</p>
+                                </a>
+                            </div>
+                            <div class="btn-play">
+                                <button class="d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-3 col-lg-2">
+                        <div class="card">
+                            <a href="">
+                                <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                            </a>
+                            <div class="card-body p-0">
+                                <a href="">
+                                    <h5 class="card-title">Teste</h5>
+                                    <p class="card-text">Teste</p>
+                                </a>
+                            </div>
+                            <div class="btn-play">
+                                <button class="d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-3 col-lg-2">
+                        <div class="card">
+                            <a href="">
+                                <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                            </a>
+                            <div class="card-body p-0">
+                                <a href="">
+                                    <h5 class="card-title">Teste</h5>
+                                    <p class="card-text">Teste</p>
+                                </a>
+                            </div>
+                            <div class="btn-play">
+                                <button class="d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-3 col-lg-2">
+                        <div class="card">
+                            <a href="">
+                                <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                            </a>
+                            <div class="card-body p-0">
+                                <a href="">
+                                    <h5 class="card-title">Teste</h5>
+                                    <p class="card-text">Teste</p>
+                                </a>
+                            </div>
+                            <div class="btn-play">
+                                <button class="d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-3 col-lg-2">
+                        <div class="card">
+                            <a href="">
+                                <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                            </a>
+                            <div class="card-body p-0">
+                                <a href="">
+                                    <h5 class="card-title">Teste</h5>
+                                    <p class="card-text">Teste</p>
+                                </a>
+                            </div>
+                            <div class="btn-play">
+                                <button class="d-flex justify-content-center align-items-center">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>

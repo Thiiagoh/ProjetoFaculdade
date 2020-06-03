@@ -50,8 +50,6 @@
             </div>
         </nav>
         
-        
-        
         <div class="limiter">
             <div class="container-login100">
                 <div class="wrap-login100 p-t-50 p-b-90">
@@ -76,7 +74,6 @@
         	</div>
             </div>
     	</div>
-        
         
         <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="vendor/bootstrap/js/popper.js"></script>

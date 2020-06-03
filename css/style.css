@@ -2,3 +2,18 @@
     background-color: #352c36;
     border-radius: 5px;
 }
+
+.dropdown-menu{
+    background-color: #343a40;
+    color: #666666;
+}
+.dropdown-item{
+    background-color: #343a40;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.dropdown-item:hover{
+    background-color: #caf3ff;
+    color: #caf3ff;
+}

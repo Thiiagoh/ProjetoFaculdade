@@ -3,61 +3,65 @@
     <head>
         <title>Atualizar usuário!</title>
         <meta charset="UTF-8">
-        <style>
-            #menu ul{
-                padding:0px;
-                margin:0px;
-                background-color:#EDEDED;
-                list-style:none;
-            }
-            #menu ul li{
-                display: inline; 
-            }
-            #menu ul li a {
-                padding: 2px 10px;
-                display: inline-block;
-                background-color:#EDEDED;
-                color: #333;
-                text-decoration: none;
-                border-bottom:3px solid #EDEDED;
-            }
-        </style>
-	</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+        <link rel="stylesheet" type="text/css" href="css/util.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
     <body>
-        <div id="menu">
-            <ul>
-                <li><a href="consultar.html">Consultar</a></li>
-                <li><a href="cadastro.html">Cadastrar</a></li>
-                <li><a href="atualizar.html">Atualizar</a></li>
-                <li><a href="excluir.html">Excluir</a></li>
-            </ul>
-        </div>
-        <?php
-            //Receber as informações via formulario
-            $id = $_GET['id'];
-            $nome = $_GET['nome'];
-            $email = $_GET['email'];
-            $senha = $_GET['senha'];
-            
-            //Conectar no mysql
-            $nome_servidor = "localhost";
-            $nome_usuario = "root";
-            $senhaBanco = "";
-            $nome_banco = "cadastro";
-            $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100 p-t-50 p-b-90">
+                    <span class="login100-form-title p-b-51">Mensagem do sistema</span>
+                    <?php
+                        //Receber as informações via formulario
+                        $email = $_GET['email'];
+                        $senha = $_GET['senha'];
+                        $senha2 = $_GET['senha2'];
 
-            //Inserir registro 
-            if (empty($nome) || empty($email) || empty($senha)){
-                echo 'O campo esta vazio, escreva algo.';
-            }else{
-                $sql = "UPDATE usuarios SET nome='$nome',email='$email',senha='$senha' WHERE id='$id'";
-                if ($conecta->query($sql) === TRUE) {
-                    echo "Registro atualizado com sucesso<br>";
-                }else{
-                    echo "Erro na atualização do registro: " . $conecta->error."<br>";
-                }
-            }
-            $conecta->close();
-        ?>
+                        //Conectar no mysql
+                        $nome_servidor = "sql10.freesqldatabase.com";
+                        $nome_usuario = "sql10345169";
+                        $senhaBanco = "UAzvU32VSN";
+                        $nome_banco = "sql10345169";
+                        $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
+                        //Pegar Dado do Banco
+                        $tenta_achar = "SELECT * FROM clientes WHERE email='{$email}' AND senha='{$senha}'";
+                        $row = $resultado = $conecta->query($tenta_achar);
+                        $row = $resultado->fetch_assoc();
+                        $user = $row['senha'];
+                        //Verificar se a senha do banco é igual ao que o usuário informou
+                        if ($user=$row['senha'] == $senha){
+                            $sql = "UPDATE clientes SET senha='$senha2' WHERE email='$email'";
+                            if ($conecta->query($sql) === TRUE)
+                                echo "Senha alterada com sucesso!<br><br>";
+                            else
+                                echo "Erro na atualização do registro: " . $conecta->error."<br><br>";
+                        }else
+                            echo 'As senhas não correspondem';
+                        $conecta->close();
+                    ?>
+                    <a href="desconectar.php"><button class="login100-form-btn">Voltar</button></a>
+        	</div>
+            </div>
+    	</div>
+        <div id="dropDownSelect1"></div>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script src="js/main.js"></script>
     </body>
 </html>

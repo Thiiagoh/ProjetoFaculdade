@@ -40,7 +40,7 @@
                       Alterações
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="alterarDados.php">Alterar Senha</a>
+                        <a class="dropdown-item" href="#">Alterar Senha</a>
                         <a class="dropdown-item" href="excluirConta.php">Excluir Conta</a>
                     </div>
                 </li>
@@ -58,7 +58,7 @@
                     <form class="login100-form validate-form flex-sb flex-w" action="atualizar.php" method="POST">
                         <span class="login100-form-title p-b-51">Alterar Senha</span>
                         <div class="wrap-input100 validate-input m-b-16" data-validate = "Email de usuário é requerido">
-                            <input class="input100" type="email" name="email" placeholder="Email">
+                            <input class="input100" type="email" value="<?php echo $logado; ?>" name="email" disabled>
                             <span class="focus-input100"></span>
                         </div>
                         <div class="wrap-input100 validate-input m-b-16" data-validate = "Senha requerida">

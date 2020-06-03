@@ -15,6 +15,14 @@
         <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
         <link rel="stylesheet" type="text/css" href="css/util.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <?php 
+            session_start();
+            if((!isset($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)){
+                session_unset();
+                echo "<script>alert('Esta página só pode ser acessada por usuário logado');window.location.href = 'index.html';</script>";
+            }
+            $logado = $_SESSION['email'];
+        ?>
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -51,7 +59,7 @@
                     <form class="login100-form validate-form flex-sb flex-w" action="excluir.php" method="POST">
                         <span class="login100-form-title p-b-51">Excluir Conta</span>
                         <div class="wrap-input100 validate-input m-b-16" data-validate = "Email de usuário é requerido">
-                            <input class="input100" type="email" name="email" placeholder="Email">
+                            <input class="input100" type="email" value="<?php echo $logado; ?>" name="email" disabled>
                             <span class="focus-input100"></span>
                         </div>
                         <div class="wrap-input100 validate-input m-b-16" data-validate = "Senha requerida">

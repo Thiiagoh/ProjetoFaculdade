@@ -41,7 +41,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="alterarDados.php">Alterar Senha</a>
-                        <a class="dropdown-item" href="excluir.php">Excluir Conta</a>
+                        <a class="dropdown-item" href="excluirConta.php">Excluir Conta</a>
                     </div>
                 </li>
                 

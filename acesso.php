@@ -32,9 +32,8 @@
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Principal<span class="sr-only">(página atual)</span></a>
+                    <a class="nav-link" href="#">Início<span class="sr-only">(página atual)</span></a>
                 </li>
-                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Alterações
@@ -44,7 +43,6 @@
                         <a class="dropdown-item" href="excluirConta.php">Excluir Conta</a>
                     </div>
                 </li>
-                
             </ul>
                 <a href="desconectar.php"><button class="btn btn-outline-secondary my-2 my-sm-0">Desconectar</button></a>
             </div>

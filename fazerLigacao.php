@@ -17,7 +17,7 @@
     $tenta_achar = "SELECT * FROM clientes WHERE email='$login' AND senha='$senha'";
     $resultado = $tenta_conectar->query($tenta_achar);
     if ($resultado->num_rows > 0){
-        $_SESSION['email'] = $email;
+        $_SESSION['email'] = $login;
         $_SESSION['senha'] = $senha;
         header('location:acesso.php');
     }

@@ -24,32 +24,6 @@
         ?>
     </head>
     <body>
-        <!--<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-                 <img src="images/icons/audio.png" width="45" height="45" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Início<span class="sr-only">(página atual)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Alterações
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="alterarDados.php">Alterar Senha</a>
-                        <a class="dropdown-item" href="excluirConta.php">Excluir Conta</a>
-                    </div>
-                </li>
-            </ul>
-                <a href="desconectar.php"><button class="btn btn-outline-secondary my-2 my-sm-0">Desconectar</button></a>
-            </div>
-        </nav>-->
-        
         <div class="root">
             <nav class="nav-bar d-flex flex-column">
                 <div class="nav-bar-header d-flex pl-4 pt-4 pb-4">
@@ -57,7 +31,7 @@
                 </div>
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a href="" class="nav-link d-flex align-items-center">
+                        <a href="#" class="nav-link d-flex align-items-center">
                             <i class="fa fa-home"></i>
                             <span>Início</span>
                         </a>
@@ -73,8 +47,7 @@
 
             <div class="top-bar">
                 <header id="header" class="d-flex position-relative">
-                    <div class="header-overlay"></div>
-
+                    <div id="header-overlay"></div>
                     <div class="d-flex ml-auto">
                         <div class="dropdown menu ml-3">
                             <button type="button" class="d-flex align-items-center" data-toggle="dropdown">
@@ -83,15 +56,15 @@
                                 <i class="fas fa-caret-down ml-2 mr-2"></i>
                             </button>
                             <div class="dropdown-menu mt-0 p-0">
-                                <a href="" class="dropdown-item">Alterar senha</a>
-                                <a href="" class="dropdown-item">Excluir conta</a>
+                                <a href="alterarDados.php" class="dropdown-item">Alterar senha</a>
+                                <a href="excluirConta.php" class="dropdown-item">Excluir conta</a>
                                 <div class="dropdown-divider"></div>
-                                    <a href="" class="dropdown-item">Sair</a>
-                                </div>
+                                <a href="desconectar.php" class="dropdown-item">Sair</a>
                             </div>
                         </div>
-                    </header>
-                </div>
+                    </div>
+                </header>
+            </div>
 
             <div id="main" class="main d-flex flex-column">
                     <div class="margin-top"></div>
@@ -338,26 +311,17 @@
                         </div>
                     </div>
                 </div>
-        </div>
-        
-        
-        
-        
-        
-    <!--    
-        
-                
-        
+        </div>  
         <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="vendor/select2/select2.min.js"></script>
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script>
-            $('.js-tilt').tilt({
-        	scale: 1.1
-            });
-	</script>
-	<script src="js/main.js"></script>
+    	<script src="vendor/bootstrap/js/popper.js"></script>
+    	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    	<script src="vendor/select2/select2.min.js"></script>
+    	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+    	<script>
+                $('.js-tilt').tilt({
+            	scale: 1.1
+                });
+    	</script>
+    	<script src="js/main.js"></script>
     </body>
 </html>

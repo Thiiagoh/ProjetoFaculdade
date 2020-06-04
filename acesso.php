@@ -74,14 +74,6 @@
             <div class="top-bar">
                 <header id="header" class="d-flex position-relative">
                     <div class="header-overlay"></div>
-                    <div class="icons-action-left d-flex">
-                        <button class="d-flex justify-content-center align-items-center">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <button class="d-flex justify-content-center align-items-center ml-3">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
 
                     <div class="d-flex ml-auto">
                         <div class="dropdown menu ml-3">

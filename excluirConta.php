@@ -76,21 +76,25 @@
                     <h2 class="title mb-3">Excluir conta!</h2>
                     <div class="row list mb-5">
                         <div class="col-12 col-md-3 col-lg-2">
-                            <div class="card">
-                                <a href="">
-                                    <img src="images/icons/audio.png" class="card-img-top mb-3"/>
-                                </a>
-                                <div class="card-body p-0">
-                                    <a href="">
-                                        <h5 class="card-title">Teste</h5>
-                                        <p class="card-text">Teste</p>
-                                    </a>
-                                </div>
-                                <div class="btn-play">
-                                    <button class="d-flex justify-content-center align-items-center">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                </div>
+                            <div class="wrap-login100 p-t-50 p-b-90">
+                                <form class="login100-form validate-form flex-sb flex-w" action="excluir.php" method="POST">
+                                    <span class="login100-form-title p-b-51">Excluir Conta</span>
+                                    <div class="wrap-input100 validate-input m-b-16" data-validate = "Email de usuário é requerido">
+                                        <input class="input100" type="email" value="<?php echo $logado; ?>" name="email" disabled>
+                                        <span class="focus-input100"></span>
+                                    </div>
+                                    <div class="wrap-input100 validate-input m-b-16" data-validate = "Senha requerida">
+                                        <input class="input100" type="password" name="senha" placeholder="Senha Atual">
+                                        <span class="focus-input100"></span>
+                                    </div>
+                                    <div class="wrap-input100 validate-input m-b-16" data-validate = "Senha requerida">
+                                        <input class="input100" type="password" name="senha2" placeholder="Comfirmar Senha">
+                                        <span class="focus-input100"></span>
+                                    </div>
+                                    <div class="container-login100-form-btn m-t-17">
+                                        <button class="login100-form-btn">Excluir</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

@@ -15,6 +15,14 @@
         <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
         <link rel="stylesheet" type="text/css" href="css/util.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <?php 
+            session_start();
+            if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)){
+                session_unset();
+                echo "<script>alert('Esta página só pode ser acessada por usuário logado');window.location.href = 'index.html';</script>";
+            }
+            $logado = $_SESSION['email'];
+        ?>
     </head>
     <body>
         <div class="limiter">
@@ -23,10 +31,8 @@
                     <span class="login100-form-title p-b-51">Mensagem do sistema</span>
                     <?php
                         //Receber as informações via formulario
-                        $email = $_POST['email'];
                         $senha = $_POST['senha'];
                         $senha2 = $_POST['senha2'];
-
                         //Conectar no mysql
                         $nome_servidor = "sql10.freesqldatabase.com";
                         $nome_usuario = "sql10345169";
@@ -34,9 +40,10 @@
                         $nome_banco = "sql10345169";
                         $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
                         //Pegar Dado do Banco
-                        $tenta_achar = "SELECT * FROM clientes WHERE email='{$email}' AND senha='{$senha}'";
+                        $tenta_achar = "SELECT * FROM clientes WHERE email='{$logado}' AND senha='{$senha}'";
                         $resultados = $conecta->query($tenta_achar);
                         if ($resultados->num_rows <= 0){
+                            echo $logado;
                             echo 'Nenhum usuário encontrado!<br><br>';
                         }else{
                             $row = $resultado = $conecta->query($tenta_achar);
@@ -44,7 +51,7 @@
                             $user = $row['senha'];
                             //Verificar se a senha do banco é igual ao que o usuário informou
                             if ($user=$row['senha'] == $senha){
-                                $sql = "UPDATE clientes SET senha='$senha2' WHERE email='$email'";
+                                $sql = "UPDATE clientes SET senha='$senha2' WHERE email='$logado'";
                                 if ($conecta->query($sql) === TRUE)
                                     echo "Senha alterada com sucesso!<br><br>";
                                 else

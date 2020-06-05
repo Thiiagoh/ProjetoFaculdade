@@ -176,6 +176,17 @@ button{
     font-size: 12px;
 }
 
+.main .list .card .btn-rem{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    opacity: 0;
+}
+
+.main .list .card:hover > .btn-rem{
+    opacity: 1;
+}
+
 .main .list .card .btn-rem button{
     color: #fff;
     background-color: #912727;

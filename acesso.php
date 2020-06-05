@@ -74,7 +74,6 @@
                     <div class="main-container">
                         <h2 class="title mb-3">Lançado recentemente</h2>
                         <div class="row list mb-5">
-                            
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
                                     <a href="">
@@ -82,18 +81,32 @@
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Teste</h5>
-                                            <p class="card-text">Teste</p>
+                                            <h5 class="card-title">Ameaça Profunda</h5>
+                                            <p class="card-text">Ação</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
+                                        <a href="">
+                                            <button type="button" class="d-flex justify-content-center align-items-center">
+                                                <?php
+                                                    $nome_servidor = "sql10.freesqldatabase.com";
+                                                    $nome_usuario = "sql10345169";
+                                                    $senhaBanco = "UAzvU32VSN";
+                                                    $nome_banco = "sql10345169";
+                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
+                                                    $ameaça = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Ameaca Profunda', '$logado')";
+                                                    $conecta->query($ameaça);
+                                                ?>
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             
+
+
+
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
                                     <a href="">
@@ -101,93 +114,31 @@
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Teste</h5>
-                                            <p class="card-text">Teste</p>
+                                            <h5 class="card-title">Flash</h5>
+                                            <p class="card-text">Ação</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-12 col-md-3 col-lg-2">
-                                <div class="card">
-                                    <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
-                                    </a>
-                                    <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Teste</h5>
-                                            <p class="card-text">Teste</p>
+                                            <button type="button" class="d-flex justify-content-center align-items-center">
+                                                <?php
+                                                    $nome_servidor = "sql10.freesqldatabase.com";
+                                                    $nome_usuario = "sql10345169";
+                                                    $senhaBanco = "UAzvU32VSN";
+                                                    $nome_banco = "sql10345169";
+                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
+                                                    $flash = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Flash', '$logado')";
+                                                    $conecta->query($flash);
+                                                ?>
+                                                <i class="fas fa-plus"></i>
+                                            </button>
                                         </a>
-                                    </div>
-                                    <div class="btn-play">
-                                        <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
                                     </div>
                                 </div>
                             </div>
+                          
                             
-                            <div class="col-12 col-md-3 col-lg-2">
-                                <div class="card">
-                                    <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
-                                    </a>
-                                    <div class="card-body p-0">
-                                        <a href="">
-                                            <h5 class="card-title">Teste</h5>
-                                            <p class="card-text">Teste</p>
-                                        </a>
-                                    </div>
-                                    <div class="btn-play">
-                                        <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-12 col-md-3 col-lg-2">
-                                <div class="card">
-                                    <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
-                                    </a>
-                                    <div class="card-body p-0">
-                                        <a href="">
-                                            <h5 class="card-title">Teste</h5>
-                                            <p class="card-text">Teste</p>
-                                        </a>
-                                    </div>
-                                    <div class="btn-play">
-                                        <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-12 col-md-3 col-lg-2">
-                                <div class="card">
-                                    <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
-                                    </a>
-                                    <div class="card-body p-0">
-                                        <a href="">
-                                            <h5 class="card-title">Teste</h5>
-                                            <p class="card-text">Teste</p>
-                                        </a>
-                                    </div>
-                                    <div class="btn-play">
-                                        <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                           
                         </div>
                         <div class="d-flex align-items-center mb-3">
                             <div>
@@ -235,81 +186,8 @@
                                 </div>
                             </div>
                             
-                            <div class="col-12 col-md-3 col-lg-2">
-                                <div class="card">
-                                    <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
-                                    </a>
-                                    <div class="card-body p-0">
-                                        <a href="">
-                                            <h5 class="card-title">Teste</h5>
-                                            <p class="card-text">Teste</p>
-                                        </a>
-                                    </div>
-                                    <div class="btn-play">
-                                        <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
                             
-                            <div class="col-12 col-md-3 col-lg-2">
-                                <div class="card">
-                                    <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
-                                    </a>
-                                    <div class="card-body p-0">
-                                        <a href="">
-                                            <h5 class="card-title">Teste</h5>
-                                            <p class="card-text">Teste</p>
-                                        </a>
-                                    </div>
-                                    <div class="btn-play">
-                                        <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
                             
-                            <div class="col-12 col-md-3 col-lg-2">
-                                <div class="card">
-                                    <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
-                                    </a>
-                                    <div class="card-body p-0">
-                                        <a href="">
-                                            <h5 class="card-title">Teste</h5>
-                                            <p class="card-text">Teste</p>
-                                        </a>
-                                    </div>
-                                    <div class="btn-play">
-                                        <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="col-12 col-md-3 col-lg-2">
-                                <div class="card">
-                                    <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
-                                    </a>
-                                    <div class="card-body p-0">
-                                        <a href="">
-                                            <h5 class="card-title">Teste</h5>
-                                            <p class="card-text">Teste</p>
-                                        </a>
-                                    </div>
-                                    <div class="btn-play">
-                                        <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
                             
                         </div>
                     </div>

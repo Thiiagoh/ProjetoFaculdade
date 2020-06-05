@@ -3,15 +3,25 @@
     <head>
         <title>Excluir um usuário!</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
         <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
         <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
         <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
         <link rel="stylesheet" type="text/css" href="css/util.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <?php 
+            session_start();
+            if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)){
+                session_unset();
+                echo "<script>alert('Esta página só pode ser acessada por usuário logado');window.location.href = 'index.html';</script>";
+            }
+            $logado = $_SESSION['email'];
+        ?>
         <?php 
             session_start();
             if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)){
@@ -28,7 +38,6 @@
                     <span class="login100-form-title p-b-51">Mensagem do sistema</span>       
                         <?php
                             //Receber as informações via formulario
-                            $email = $_POST['email'];
                             $senha = $_POST['senha'];
                             $senha2 = $_POST['senha2'];
 
@@ -39,7 +48,7 @@
                             $nome_banco = "sql10345169";
                             $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
                             //Pegar Dado do Banco
-                            $tenta_achar = "SELECT * FROM clientes WHERE email='{$email}' AND senha='{$senha}'";
+                            $tenta_achar = "SELECT * FROM clientes WHERE email='{$logado}' AND senha='{$senha}'";
                             $resultados = $conecta->query($tenta_achar);
                             if ($resultados->num_rows <= 0){
                                 echo 'Nenhum usuário encontrado!<br><br>';
@@ -49,7 +58,7 @@
                                 $user = $row['senha'];
                                 //Verificar se a senha do banco é igual ao que o usuário informou
                                 if ($user=$row['senha'] == $senha){
-                                    $sql = "DELETE FROM clientes WHERE email='$email'";
+                                    $sql = "DELETE FROM clientes WHERE email='$logado'";
                                     if ($conecta->query($sql) === TRUE)
                                         echo "Usuário apagado com sucesso!<br><br>";
                                     else

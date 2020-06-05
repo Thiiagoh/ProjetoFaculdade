@@ -36,6 +36,7 @@ button{
 
 .top-bar{
     grid-area: main-view;
+    background-color: rgba(0,0,0,.2);
     height: 60px;
     z-index: 2;
 }
@@ -74,6 +75,14 @@ button{
     height: 100%;
     min-height: 0;
     overflow-y: scroll;
+}
+
+.main-acesso{
+    grid-area: main-view;
+    flex: 1;
+    height: 100%;
+    min-height: 0;
+    overflow-y: hidden;
 }
 
 .main .margin-top{

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Página - Inícial</title>
+        <title>Página - Meus Videos</title>
 	    <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -33,14 +33,14 @@
                     <img class="logo" src="images/icons/audio.png" class="card-img-top mb-3"/>
                 </div>
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link d-flex align-items-center">
+                    <li class="nav-item">
+                        <a href="acesso.php" class="nav-link d-flex align-items-center">
                             <i class="fa fa-home"></i>
                             <span>Início</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="meusfavoritos.php" class="nav-link d-flex align-items-center">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link d-flex align-items-center">
                             <i class="fas fa-video"></i>
                             <span>Meus Videos</span>
                         </a>
@@ -55,7 +55,7 @@
                         <div class="dropdown menu ml-3">
                             <button type="button" class="d-flex align-items-center" data-toggle="dropdown">
                                 <img class="avatar" src="images/user.png"/>
-                                <span><?php echo $logado; ?></span>
+                                <span>Thiago Almeida</span>
                                 <i class="fas fa-caret-down ml-2 mr-2"></i>
                             </button>
                             <div class="dropdown-menu mt-0 p-0">

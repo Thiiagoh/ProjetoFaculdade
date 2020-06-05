@@ -72,7 +72,7 @@
             <div id="main" class="main main-acesso d-flex flex-column">
                 <div class="margin-top"></div>
                 <div class="main-container">
-                    <h2 class="title mb-3">Alterar senha!</h2>
+                    <h2 class="title mb-3">Mudança de senha!</h2>
                     <div class="row list mb-5">
                         <div class="limiter">
                             <div class="container-modificado">

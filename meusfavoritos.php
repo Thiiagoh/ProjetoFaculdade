@@ -14,9 +14,9 @@
         <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
         <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
         <link rel="stylesheet" type="text/css" href="css/util.css">
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
         <?php 
             session_start();
             if((!isset($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)){
@@ -74,33 +74,33 @@
                 <div class="main-container">
                     <h2 class="title mb-3">Meus Favoritos</h2>
                     <div class="row list mb-5">
-                            <?php 
-                                $nome_servidor = "sql10.freesqldatabase.com";
-                                $nome_usuario = "sql10345169";
-                                $senhaBanco = "UAzvU32VSN";
-                                $nome_banco = "sql10345169";
-                                $conecta = mysqli_connect($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
-                                $sql = mysqli_query($conecta, "Select * From clientes");
+                        <?php 
+                            $nome_servidor = "sql10.freesqldatabase.com";
+                            $nome_usuario = "sql10345169";
+                            $senhaBanco = "UAzvU32VSN";
+                            $nome_banco = "sql10345169";
+                            $conecta = mysqli_connect($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
+                            $sql = mysqli_query($conecta, "Select * From clientes");
                                 
-                                while($exibe = mysqli_fetch_assoc($sql)){
+                            while($exibe = mysqli_fetch_assoc($sql)){
                                     
-                                    echo '<div class="col-12 col-md-3 col-lg-2">';
-                                    echo '  <div class="card">';
-                                    echo '      <img src="images/icons/audio.png" class="card-img-top mb-3"/>';
-                                    echo '      <div class="card-body p-0">
-                                                    <h5 class="card-title">'.$exibe["email"].'</h5>
-                                                    <p class="card-text">Teste</p>
-                                                </div>';
-                                    echo '      <div class="btn-play">
-                                                    <button class="d-flex justify-content-center align-items-center">
-                                                        <i class="far fa-trash-alt"></i>
-                                                    </button>
-                                                </div>';
-                                    echo "  </div>";
-                                    echo '</div>';
-                                }
+                                echo '<div class="col-12 col-md-3 col-lg-2">';
+                                echo '  <div class="card">';
+                                echo '      <img src="images/icons/audio.png" class="card-img-top mb-3"/>';
+                                echo '      <div class="card-body p-0">
+                                                <h5 class="card-title">'.$exibe["email"].'</h5>
+                                                <p class="card-text">Teste</p>
+                                            </div>';
+                                echo '      <div class="btn-rem">
+                                                <button class="d-flex justify-content-center align-items-center">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </div>';
+                                echo "  </div>";
+                                echo '</div>';
+                            }
                                
-                            ?>
+                        ?>
                     </div>
                 </div>
             </div>

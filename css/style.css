@@ -176,6 +176,17 @@ button{
     font-size: 12px;
 }
 
+.main .list .card .btn-rem button{
+    color: #fff;
+    background-color: #912727;
+    border-radius: 50px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    font-size: 12px;
+}
+
 .top-bar header {
     padding: 16px 48px 16px 32px;
 }

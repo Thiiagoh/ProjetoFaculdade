@@ -88,7 +88,7 @@
                                     </div>
                                     <div class="btn-play">
                                         <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-play"></i>
+                                            <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -107,7 +107,7 @@
                                     </div>
                                     <div class="btn-play">
                                         <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-play"></i>
+                                            <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@
                                     </div>
                                     <div class="btn-play">
                                         <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-play"></i>
+                                            <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@
                                     </div>
                                     <div class="btn-play">
                                         <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-play"></i>
+                                            <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -164,7 +164,7 @@
                                     </div>
                                     <div class="btn-play">
                                         <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-play"></i>
+                                            <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -183,7 +183,7 @@
                                     </div>
                                     <div class="btn-play">
                                         <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-play"></i>
+                                            <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -210,7 +210,7 @@
                                     </div>
                                     <div class="btn-play">
                                         <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-play"></i>
+                                            <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -229,7 +229,7 @@
                                     </div>
                                     <div class="btn-play">
                                         <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-play"></i>
+                                            <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -248,7 +248,7 @@
                                     </div>
                                     <div class="btn-play">
                                         <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-play"></i>
+                                            <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -267,7 +267,7 @@
                                     </div>
                                     <div class="btn-play">
                                         <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-play"></i>
+                                            <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -286,7 +286,7 @@
                                     </div>
                                     <div class="btn-play">
                                         <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-play"></i>
+                                            <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -305,7 +305,7 @@
                                     </div>
                                     <div class="btn-play">
                                         <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-play"></i>
+                                            <i class="fas fa-plus"></i>
                                         </button>
                                     </div>
                                 </div>

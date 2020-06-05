@@ -69,30 +69,38 @@
                 </header>
             </div>
 
-            <div id="main" class="main d-flex flex-column">
-                    <div class="margin-top"></div>
+            <div class="main d-flex flex-column">
+                <div class="margin-top"></div>
                 <div class="main-container">
                     <h2 class="title mb-3">Meus Favoritos</h2>
                     <div class="row list mb-5">
-                        <div class="col-12 col-md-3 col-lg-2">
-                            <div class="card">
-                                <a href="">
-                                    <img src="images/icons/audio.png" class="card-img-top mb-3"/>
-                                </a>
-                                <div class="card-body p-0">
-                                    <a href="">
-                                        <h5 class="card-title">Teste</h5>
-                                        <p class="card-text">Teste</p>
-                                    </a>
-                                </div>
-                                <div class="btn-play">
-                                    <button class="d-flex justify-content-center align-items-center">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                            
+                            <?php 
+                                $nome_servidor = "sql10.freesqldatabase.com";
+                                $nome_usuario = "sql10345169";
+                                $senhaBanco = "UAzvU32VSN";
+                                $nome_banco = "sql10345169";
+                                $conecta = mysqli_connect($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
+                                $sql = mysqli_query($conecta, "Select * From clientes");
+                                
+                                while($exibe = mysqli_fetch_assoc($sql)){
+                                    
+                                    echo '<div class="col-12 col-md-3 col-lg-2">';
+                                    echo '  <div class="card">';
+                                    echo '      <img src="images/icons/audio.png" class="card-img-top mb-3"/>';
+                                    echo '      <div class="card-body p-0">
+                                                    <h5 class="card-title">'.$exibe["email"].'</h5>
+                                                    <p class="card-text">Teste</p>
+                                                </div>';
+                                    echo '      <div class="btn-play">
+                                                    <button class="d-flex justify-content-center align-items-center">
+                                                        <i class="far fa-trash-alt"></i>
+                                                    </button>
+                                                </div>';
+                                    echo "  </div>";
+                                    echo '</div>';
+                                }
+                               
+                            ?>
                     </div>
                 </div>
             </div>

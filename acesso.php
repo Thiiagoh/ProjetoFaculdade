@@ -72,7 +72,7 @@
             <div id="main" class="main d-flex flex-column">
                     <div class="margin-top"></div>
                     <div class="main-container">
-                        <h2 class="title mb-3">Lançado recentemente</h2>
+                        <h2 class="title mb-3">Filmes/Series que estão no momento</h2>
                         <div class="row list mb-5">
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
@@ -103,8 +103,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
-
 
 
                             <div class="col-12 col-md-3 col-lg-2">
@@ -136,13 +134,131 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-12 col-md-3 col-lg-2">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                    </a>
+                                    <div class="card-body p-0">
+                                        <a href="">
+                                            <h5 class="card-title">Supernatural</h5>
+                                            <p class="card-text">Drama</p>
+                                        </a>
+                                    </div>
+                                    <div class="btn-play">
+                                        <a href="">
+                                            <button type="button" class="d-flex justify-content-center align-items-center">
+                                                <?php
+                                                    $nome_servidor = "sql10.freesqldatabase.com";
+                                                    $nome_usuario = "sql10345169";
+                                                    $senhaBanco = "UAzvU32VSN";
+                                                    $nome_banco = "sql10345169";
+                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
+                                                    $supernatural = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Supernatural', '$logado')";
+                                                    $conecta->query($supernatural);
+                                                ?>
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                           
-                            
+                            <div class="col-12 col-md-3 col-lg-2">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                    </a>
+                                    <div class="card-body p-0">
+                                        <a href="">
+                                            <h5 class="card-title">The 100</h5>
+                                            <p class="card-text">Ação</p>
+                                        </a>
+                                    </div>
+                                    <div class="btn-play">
+                                        <a href="">
+                                            <button type="button" class="d-flex justify-content-center align-items-center">
+                                                <?php
+                                                    $nome_servidor = "sql10.freesqldatabase.com";
+                                                    $nome_usuario = "sql10345169";
+                                                    $senhaBanco = "UAzvU32VSN";
+                                                    $nome_banco = "sql10345169";
+                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
+                                                    $the100 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('The 100', '$logado')";
+                                                    $conecta->query($the100);
+                                                ?>
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-3 col-lg-2">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                    </a>
+                                    <div class="card-body p-0">
+                                        <a href="">
+                                            <h5 class="card-title">Breaking Bad</h5>
+                                            <p class="card-text">Ação</p>
+                                        </a>
+                                    </div>
+                                    <div class="btn-play">
+                                        <a href="">
+                                            <button type="button" class="d-flex justify-content-center align-items-center">
+                                                <?php
+                                                    $nome_servidor = "sql10.freesqldatabase.com";
+                                                    $nome_usuario = "sql10345169";
+                                                    $senhaBanco = "UAzvU32VSN";
+                                                    $nome_banco = "sql10345169";
+                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
+                                                    $breaking = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Breaking Bad', '$logado')";
+                                                    $conecta->query($breaking);
+                                                ?>
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-3 col-lg-2">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                    </a>
+                                    <div class="card-body p-0">
+                                        <a href="">
+                                            <h5 class="card-title">The BlackList</h5>
+                                            <p class="card-text">Ação</p>
+                                        </a>
+                                    </div>
+                                    <div class="btn-play">
+                                        <a href="">
+                                            <button type="button" class="d-flex justify-content-center align-items-center">
+                                                <?php
+                                                    $nome_servidor = "sql10.freesqldatabase.com";
+                                                    $nome_usuario = "sql10345169";
+                                                    $senhaBanco = "UAzvU32VSN";
+                                                    $nome_banco = "sql10345169";
+                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
+                                                    $blacklist = "INSERT INTO favoritos(filmes, clientes_email) VALUES('The Black List', '$logado')";
+                                                    $conecta->query($blacklist);
+                                                ?>
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                            
                         </div>
                         <div class="d-flex align-items-center mb-3">
                             <div>
-                                <h2 class="title mb-1">Novidades</h2>
+                                <h2 class="title mb-1">Series/Filmes Recomendados</h2>
                                 <span class="subtitle">seilaseilaseilaseila</span>
                             </div>
                         </div>
@@ -155,14 +271,85 @@
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Teste</h5>
-                                            <p class="card-text">Teste</p>
+                                            <h5 class="card-title">Não Faço Ideia</h5>
+                                            <p class="card-text">Ação</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
+                                        <a href="">
+                                            <button type="button" class="d-flex justify-content-center align-items-center">
+                                                <?php
+                                                    $nome_servidor = "sql10.freesqldatabase.com";
+                                                    $nome_usuario = "sql10345169";
+                                                    $senhaBanco = "UAzvU32VSN";
+                                                    $nome_banco = "sql10345169";
+                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
+                                                    $naosei = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Nao Sei', '$logado')";
+                                                    $conecta->query($naosei);
+                                                ?>
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-3 col-lg-2">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                    </a>
+                                    <div class="card-body p-0">
+                                        <a href="">
+                                            <h5 class="card-title">Não Faço Ideia</h5>
+                                            <p class="card-text">Ação</p>
+                                        </a>
+                                    </div>
+                                    <div class="btn-play">
+                                        <a href="">
+                                            <button type="button" class="d-flex justify-content-center align-items-center">
+                                                <?php
+                                                    $nome_servidor = "sql10.freesqldatabase.com";
+                                                    $nome_usuario = "sql10345169";
+                                                    $senhaBanco = "UAzvU32VSN";
+                                                    $nome_banco = "sql10345169";
+                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
+                                                    $seila = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila', '$logado')";
+                                                    $conecta->query($seila);
+                                                ?>
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-3 col-lg-2">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                    </a>
+                                    <div class="card-body p-0">
+                                        <a href="">
+                                            <h5 class="card-title">Não Faço Ideia</h5>
+                                            <p class="card-text">Ação</p>
+                                        </a>
+                                    </div>
+                                    <div class="btn-play">
+                                        <a href="">
+                                            <button type="button" class="d-flex justify-content-center align-items-center">
+                                                <?php
+                                                    $nome_servidor = "sql10.freesqldatabase.com";
+                                                    $nome_usuario = "sql10345169";
+                                                    $senhaBanco = "UAzvU32VSN";
+                                                    $nome_banco = "sql10345169";
+                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
+                                                    $seila2 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila2', '$logado')";
+                                                    $conecta->query($seila2);
+                                                ?>
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -174,24 +361,92 @@
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Teste</h5>
-                                            <p class="card-text">Teste</p>
+                                            <h5 class="card-title">Não Faço Ideia</h5>
+                                            <p class="card-text">Ação</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <button class="d-flex justify-content-center align-items-center">
-                                            <i class="fas fa-plus"></i>
-                                        </button>
+                                        <a href="">
+                                            <button type="button" class="d-flex justify-content-center align-items-center">
+                                                <?php
+                                                    $nome_servidor = "sql10.freesqldatabase.com";
+                                                    $nome_usuario = "sql10345169";
+                                                    $senhaBanco = "UAzvU32VSN";
+                                                    $nome_banco = "sql10345169";
+                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
+                                                    $seila3 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila3', '$logado')";
+                                                    $conecta->query($seila3);
+                                                ?>
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            
-                            
-                            
-                            
+
+                            <div class="col-12 col-md-3 col-lg-2">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                    </a>
+                                    <div class="card-body p-0">
+                                        <a href="">
+                                            <h5 class="card-title">Não Faço Ideia</h5>
+                                            <p class="card-text">Ação</p>
+                                        </a>
+                                    </div>
+                                    <div class="btn-play">
+                                        <a href="">
+                                            <button type="button" class="d-flex justify-content-center align-items-center">
+                                                <?php
+                                                    $nome_servidor = "sql10.freesqldatabase.com";
+                                                    $nome_usuario = "sql10345169";
+                                                    $senhaBanco = "UAzvU32VSN";
+                                                    $nome_banco = "sql10345169";
+                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
+                                                    $seila4 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila4', '$logado')";
+                                                    $conecta->query($seila4);
+                                                ?>
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-3 col-lg-2">
+                                <div class="card">
+                                    <a href="">
+                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                    </a>
+                                    <div class="card-body p-0">
+                                        <a href="">
+                                            <h5 class="card-title">Não Faço Ideia</h5>
+                                            <p class="card-text">Ação</p>
+                                        </a>
+                                    </div>
+                                    <div class="btn-play">
+                                        <a href="">
+                                            <button type="button" class="d-flex justify-content-center align-items-center">
+                                                <?php
+                                                    $nome_servidor = "sql10.freesqldatabase.com";
+                                                    $nome_usuario = "sql10345169";
+                                                    $senhaBanco = "UAzvU32VSN";
+                                                    $nome_banco = "sql10345169";
+                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
+                                                    $seila5 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila5', '$logado')";
+                                                    $conecta->query($seila5);
+                                                ?>
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </div>
+            </div>
         </div>  
         <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     	<script src="vendor/bootstrap/js/popper.js"></script>

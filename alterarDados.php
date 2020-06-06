@@ -42,7 +42,7 @@
                     <li class="nav-item">
                         <a href="meusfavoritos.php" class="nav-link d-flex align-items-center">
                             <i class="fas fa-video"></i>
-                            <span>Meus Videos</span>
+                            <span>Meus Favoritos</span>
                         </a>
                     </li>
                 </ul>

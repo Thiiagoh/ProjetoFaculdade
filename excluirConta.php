@@ -42,7 +42,7 @@
                     <li class="nav-item">
                         <a href="meusfavoritos.php" class="nav-link d-flex align-items-center">
                             <i class="fas fa-video"></i>
-                            <span>Meus Videos</span>
+                            <span>Meus Favoritos</span>
                         </a>
                     </li>
                 </ul>
@@ -89,7 +89,7 @@
                                             <span class="focus-input100"></span>
                                         </div>
                                         <div class="wrap-input100 validate-input m-b-16" data-validate = "Senha requerida">
-                                            <input class="input100" type="password" name="senha2" placeholder="Comfirmar Senha">
+                                            <input class="input100" type="password" name="senha2" placeholder="Confirmar Senha">
                                             <span class="focus-input100"></span>
                                         </div>
                                         <div class="container-login100-form-btn m-t-17">

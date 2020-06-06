@@ -74,26 +74,36 @@
                 <div class="main-container">
                     <h2 class="title mb-3">Meus Favoritos</h2>
                     <div class="row list mb-5"> 
+
+
                         <?php 
                             include_once "conectar.php";
                             $conecta = mysqli_connect($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
                             $sql = mysqli_query($conecta, "select * from favoritos where clientes_email ='$logado'");
                             $i=0;
                             while($exibe = mysqli_fetch_assoc($sql)){
-                                $nome[$i] = $exibe["filmes"];    
+                                $nome[$i] = $exibe["filmes"];
+                                $img[$i] = $exibe["nome"];
+                                $data[$i] = $exibe["data"];
+                                $genero[$i] = $exibe["genero"];
+
+                                $delet[$i] = "DELETE FROM favoritos WHERE filmes='$nome[$i]' AND clientes_email='$logado'";    
                                 echo '<div class="col-12 col-md-3 col-lg-2">';
                                 echo '  <div class="card">';
-                                echo '      <img src="images/icons/audio.png" class="card-img-top mb-3"/>';
+                                echo '      <img src="images/img_filme/'.$img[$i].'.jpg" class="card-img-top mb-3"/>';
                                 echo '      <div class="card-body p-0">
-                                                <h5 class="card-title">'.$exibe["filmes"].'</h5>
-                                                <p class="card-text">Teste</p>
+                                                <h5 class="card-title">'.$nome[$i].'</h5>
+                                                <p class="card-text">'.$genero[$i].'</p>
+                                                <p class="card-text">'.$data[$i].'</p>
                                             </div>';
                                 echo '      <div class="btn-rem">
-                                                <button class="d-flex justify-content-center align-items-center">';
-                                                    $delet[$i] = "DELETE FROM favoritos WHERE filmes='$nome[$i]' AND clientes_email='$logado'";
-                                                    $conecta->query($delet[$i]);
-                                echo '              <i class="fas fa-trash"></i>
-                                                </button>
+                                                <form action="favoritosrem.php" method="POST">
+                                                    <button name="email" value="'.$logado.'" class="d-flex justify-content-center align-items-center">
+                                                        <input type="" name="remover" value="'.$delet[$i].'" hidden>
+                                                        <input type="" name="opcao" value="1" hidden>
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </form>
                                             </div>
                                        </div>
                                      </div>';

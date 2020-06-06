@@ -73,19 +73,23 @@
             <div id="main" class="main d-flex flex-column">
                     <div class="margin-top"></div>
                     <div class="main-container">
-                        <h2 class="title mb-3">Filmes/Series que estão no momento</h2>
+                        <h2 class="title mb-3">Filmes/Séries que estão bombando no momento</h2>
                         <div class="row list mb-5">
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                        <img src="images/img_filme/anne.jpg" class="card-img-top mb-3"/>
                                     <div class="card-body p-0">
-                                            <h5 class="card-title">Ameaça Profunda</h5>
-                                            <p class="card-text">Ação</p>
+                                            <h5 class="card-title">Anne with an "E"</h5>
+                                            <p class="card-text">Drama/Romance</p>
+                                            <p class="card-text">2017</p>
                                     </div>
                                     <div class="btn-play">
                                         <form action="favoritosadd.php" method="POST">
                                             <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
-                                                <input type="" name="filme" value="Ameaça Profunda" hidden>
+                                                <input type="" name="filme" value="Anne with an E" hidden>
+                                                <input type="" name="genero" value="Drama/Romance" hidden>
+                                                <input type="" name="imagem" value="anne" hidden>
+                                                <input type="" name="lancamento" value="2017" hidden>
                                                 <input type="" name="opcao" value="0" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
@@ -98,18 +102,22 @@
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
                                     <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                        <img src="images/img_filme/gente_grande.jpg" class="card-img-top mb-3"/>
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Flash</h5>
-                                            <p class="card-text">Ação</p>
+                                            <h5 class="card-title">Gente Grande</h5>
+                                            <p class="card-text">Comédia</p>
+                                            <p class="card-text">2010</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
                                         <form action="favoritosadd.php" method="POST">
                                             <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
-                                                <input type="" name="filme" value="Flash" hidden>
+                                                <input type="" name="filme" value="Gente Grande" hidden>
+                                                <input type="" name="genero" value="Comédia" hidden>
+                                                <input type="" name="imagem" value="gente_grande" hidden>
+                                                <input type="" name="lancamento" value="2010" hidden>
                                                 <input type="" name="opcao" value="1" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
@@ -121,18 +129,22 @@
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
                                     <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                        <img src="images/img_filme/brooklyn.jpg" class="card-img-top mb-3"/>
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Supernatural</h5>
-                                            <p class="card-text">Drama</p>
+                                            <h5 class="card-title">Brooklyn Nine-Nine</h5>
+                                            <p class="card-text">Comédia/Crime</p>
+                                            <p class="card-text">2019</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
                                         <form action="favoritosadd.php" method="POST">
                                             <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
-                                                <input type="" name="filme" value="Supernatural" hidden>
+                                                <input type="" name="filme" value="Brooklyn Nine-Nine" hidden>
+                                                <input type="" name="genero" value="Comédia/Crime" hidden>
+                                                <input type="" name="imagem" value="brooklyn" hidden>
+                                                <input type="" name="lancamento" value="2019" hidden>
                                                 <input type="" name="opcao" value="2" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
@@ -144,18 +156,22 @@
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
                                     <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                        <img src="images/img_filme/paixao.jpg" class="card-img-top mb-3"/>
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">The 100</h5>
+                                            <h5 class="card-title">Paixão Obsessiva</h5>
                                             <p class="card-text">Ação</p>
+                                            <p class="card-text">2017</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
                                         <form action="favoritosadd.php" method="POST">
                                             <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
-                                                <input type="" name="filme" value="The 100" hidden>
+                                                <input type="" name="filme" value="Paixão Obsessiva" hidden>
+                                                <input type="" name="genero" value="Ação" hidden>
+                                                <input type="" name="imagem" value="paixao" hidden>
+                                                <input type="" name="lancamento" value="2017" hidden>
                                                 <input type="" name="opcao" value="3" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
@@ -167,18 +183,22 @@
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
                                     <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                        <img src="images/img_filme/vis.jpg" class="card-img-top mb-3"/>
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Breaking Bread</h5>
-                                            <p class="card-text">Ação</p>
+                                            <h5 class="card-title">Vis a Vis</h5>
+                                            <p class="card-text">Drama</p>
+                                            <p class="card-text">2015</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
                                         <form action="favoritosadd.php" method="POST">
                                             <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
-                                                <input type="" name="filme" value="Breaking Bread" hidden>
+                                                <input type="" name="filme" value="Vis a Vis" hidden>
+                                                <input type="" name="genero" value="Drama" hidden>
+                                                <input type="" name="imagem" value="vis" hidden>
+                                                <input type="" name="lancamento" value="2015" hidden>
                                                 <input type="" name="opcao" value="4" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
@@ -190,18 +210,22 @@
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
                                     <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                        <img src="images/img_filme/ilha.jpg" class="card-img-top mb-3"/>
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">The BlackList</h5>
+                                            <h5 class="card-title">Ilha do medo</h5>
                                             <p class="card-text">Ação</p>
+                                            <p class="card-text">2010</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
                                         <form action="favoritosadd.php" method="POST">
                                             <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
-                                                <input type="" name="filme" value="The BlackList" hidden>
+                                                <input type="" name="filme" value="Ilha do Medo" hidden>
+                                                <input type="" name="genero" value="Ação" hidden>
+                                                <input type="" name="imagem" value="ilha" hidden>
+                                                <input type="" name="lancamento" value="2010" hidden>
                                                 <input type="" name="opcao" value="5" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
@@ -213,8 +237,8 @@
                         </div>
                         <div class="d-flex align-items-center mb-3">
                             <div>
-                                <h2 class="title mb-1">Series/Filmes Recomendados</h2>
-                                <span class="subtitle">seilaseilaseilaseila</span>
+                                <h2 class="title mb-1">Séries/Filmes Recomendados</h2>
+                                
                             </div>
                         </div>
                         
@@ -222,25 +246,26 @@
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
                                     <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                        <img src="images/img_filme/ameaca.jpg" class="card-img-top mb-3"/>
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Não Faço Ideia</h5>
-                                            <p class="card-text">Ação</p>
+                                            <h5 class="card-title">Ameaça Profunda</h5>
+                                            <p class="card-text">Terror/Ficção/Ação</p>
+                                            <p class="card-text">2020</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <a href="">
-                                            <button type="button" class="d-flex justify-content-center align-items-center">
-                                                <?php
-                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
-                                                    $naosei = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Nao Sei', '$logado')";
-                                                    $conecta->query($naosei);
-                                                ?>
+                                        <form action="favoritosadd.php" method="POST">
+                                            <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
+                                                <input type="" name="filme" value="Ameaça Profunda" hidden>
+                                                <input type="" name="genero" value="Terror/Ficção/Ação" hidden>
+                                                <input type="" name="imagem" value="ameaca" hidden>
+                                                <input type="" name="lancamento" value="2020" hidden>
+                                                <input type="" name="opcao" value="6" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
-                                        </a>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -248,25 +273,26 @@
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
                                     <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                        <img src="images/img_filme/homem.jpg" class="card-img-top mb-3"/>
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Não Faço Ideia</h5>
-                                            <p class="card-text">Ação</p>
+                                            <h5 class="card-title">Homem Invisível</h5>
+                                            <p class="card-text">Suspense/Ficção/Terror</p>
+                                            <p class="card-text">2020</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <a href="">
-                                            <button type="button" class="d-flex justify-content-center align-items-center">
-                                                <?php
-                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
-                                                    $seila = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila', '$logado')";
-                                                    $conecta->query($seila);
-                                                ?>
+                                        <form action="favoritosadd.php" method="POST">
+                                            <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
+                                                <input type="" name="filme" value="Homem Invisível" hidden>
+                                                <input type="" name="genero" value="Suspense/Ficção/Terror" hidden>
+                                                <input type="" name="imagem" value="homem" hidden>
+                                                <input type="" name="lancamento" value="2020" hidden>
+                                                <input type="" name="opcao" value="7" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
-                                        </a>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -274,25 +300,26 @@
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
                                     <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                        <img src="images/img_filme/dois.jpg" class="card-img-top mb-3"/>
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Não Faço Ideia</h5>
-                                            <p class="card-text">Ação</p>
+                                            <h5 class="card-title">Dois Irmãos Uma Jornada Fantástica</h5>
+                                            <p class="card-text">Animação</p>
+                                            <p class="card-text">2020</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <a href="">
-                                            <button type="button" class="d-flex justify-content-center align-items-center">
-                                                <?php
-                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
-                                                    $seila2 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila2', '$logado')";
-                                                    $conecta->query($seila2);
-                                                ?>
+                                        <form action="favoritosadd.php" method="POST">
+                                            <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
+                                                <input type="" name="filme" value="Dois Irmãos Uma Jornada Fantástica" hidden>
+                                                <input type="" name="genero" value="Animação" hidden>
+                                                <input type="" name="imagem" value="dois" hidden>
+                                                <input type="" name="lancamento" value="2020" hidden>
+                                                <input type="" name="opcao" value="8" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
-                                        </a>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -300,25 +327,27 @@
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
                                     <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                        <img src="images/img_filme/poco.jpg" class="card-img-top mb-3"/>
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Não Faço Ideia</h5>
-                                            <p class="card-text">Ação</p>
+                                            <h5 class="card-title">O poço</h5>
+                                            <p class="card-text">Drama</p>
+                                            <p class="card-text">2019</p>
+
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <a href="">
-                                            <button type="button" class="d-flex justify-content-center align-items-center">
-                                                <?php
-                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
-                                                    $seila3 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila3', '$logado')";
-                                                    $conecta->query($seila3);
-                                                ?>
+                                        <form action="favoritosadd.php" method="POST">
+                                            <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
+                                                <input type="" name="filme" value="O poço" hidden>
+                                                <input type="" name="genero" value="Drama" hidden>
+                                                <input type="" name="imagem" value="poco" hidden>
+                                                <input type="" name="lancamento" value="2019" hidden>
+                                                <input type="" name="opcao" value="9" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
-                                        </a>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -326,25 +355,26 @@
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
                                     <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                        <img src="images/img_filme/sim.jpg" class="card-img-top mb-3"/>
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Não Faço Ideia</h5>
-                                            <p class="card-text">Ação</p>
+                                            <h5 class="card-title">Simpsons </h5>
+                                            <p class="card-text">Animação/Comédia</p>
+                                            <p class="card-text">2019</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <a href="">
-                                            <button type="button" class="d-flex justify-content-center align-items-center">
-                                                <?php
-                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
-                                                    $seila4 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila4', '$logado')";
-                                                    $conecta->query($seila4);
-                                                ?>
+                                        <form action="favoritosadd.php" method="POST">
+                                            <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
+                                                <input type="" name="filme" value="Simpsons" hidden>
+                                                <input type="" name="genero" value="Animação/Comédia" hidden>
+                                                <input type="" name="imagem" value="sim" hidden>
+                                                <input type="" name="lancamento" value="2019" hidden>
+                                                <input type="" name="opcao" value="10" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
-                                        </a>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -352,25 +382,26 @@
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
                                     <a href="">
-                                        <img src="images/icons/audio.png" class="card-img-top mb-3"/>
+                                        <img src="images/img_filme/milagre.jpg" class="card-img-top mb-3"/>
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Não Faço Ideia</h5>
-                                            <p class="card-text">Ação</p>
+                                            <h5 class="card-title">Milagre na Cela 7</h5>
+                                            <p class="card-text">Drama/Comédia</p>
+                                            <p class="card-text">2019</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <a href="">
-                                            <button type="button" class="d-flex justify-content-center align-items-center">
-                                                <?php
-                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
-                                                    $seila5 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila5', '$logado')";
-                                                    $conecta->query($seila5);
-                                                ?>
+                                        <form action="favoritosadd.php" method="POST">
+                                            <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
+                                                <input type="" name="filme" value="Milagre na Cela 7" hidden>
+                                                <input type="" name="genero" value="Drama/Comédia" hidden>
+                                                <input type="" name="imagem" value="milagre" hidden>
+                                                <input type="" name="lancamento" value="2019" hidden>
+                                                <input type="" name="opcao" value="11" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
-                                        </a>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

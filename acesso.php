@@ -19,6 +19,7 @@
         <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
         <?php 
             session_start();
+            include_once "conectar.php";
             if((!isset($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)){
                 session_unset();
                 echo "<script>alert('Esta página só pode ser acessada por usuário logado');window.location.href = 'index.html';</script>";
@@ -76,30 +77,19 @@
                         <div class="row list mb-5">
                             <div class="col-12 col-md-3 col-lg-2">
                                 <div class="card">
-                                    <a href="">
                                         <img src="images/icons/audio.png" class="card-img-top mb-3"/>
-                                    </a>
                                     <div class="card-body p-0">
-                                        <a href="">
                                             <h5 class="card-title">Ameaça Profunda</h5>
                                             <p class="card-text">Ação</p>
-                                        </a>
                                     </div>
                                     <div class="btn-play">
-                                        <a href="">
-                                            <button type="button" class="d-flex justify-content-center align-items-center">
-                                                <?php
-                                                    $nome_servidor = "sql10.freesqldatabase.com";
-                                                    $nome_usuario = "sql10345169";
-                                                    $senhaBanco = "UAzvU32VSN";
-                                                    $nome_banco = "sql10345169";
-                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
-                                                    $ameaça = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Ameaca Profunda', '$logado')";
-                                                    $conecta->query($ameaça);
-                                                ?>
+                                        <form action="favoritosadd.php" method="POST">
+                                            <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
+                                                <input type="" name="filme" value="Ameaça Profunda" hidden>
+                                                <input type="" name="opcao" value="0" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
-                                        </a>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -117,20 +107,13 @@
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <a href="">
-                                            <button type="button" class="d-flex justify-content-center align-items-center">
-                                                <?php
-                                                    $nome_servidor = "sql10.freesqldatabase.com";
-                                                    $nome_usuario = "sql10345169";
-                                                    $senhaBanco = "UAzvU32VSN";
-                                                    $nome_banco = "sql10345169";
-                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
-                                                    $flash = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Flash', '$logado')";
-                                                    $conecta->query($flash);
-                                                ?>
+                                        <form action="favoritosadd.php" method="POST">
+                                            <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
+                                                <input type="" name="filme" value="Flash" hidden>
+                                                <input type="" name="opcao" value="1" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
-                                        </a>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -147,20 +130,13 @@
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <a href="">
-                                            <button type="button" class="d-flex justify-content-center align-items-center">
-                                                <?php
-                                                    $nome_servidor = "sql10.freesqldatabase.com";
-                                                    $nome_usuario = "sql10345169";
-                                                    $senhaBanco = "UAzvU32VSN";
-                                                    $nome_banco = "sql10345169";
-                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
-                                                    $supernatural = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Supernatural', '$logado')";
-                                                    $conecta->query($supernatural);
-                                                ?>
+                                        <form action="favoritosadd.php" method="POST">
+                                            <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
+                                                <input type="" name="filme" value="Supernatural" hidden>
+                                                <input type="" name="opcao" value="2" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
-                                        </a>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -177,20 +153,13 @@
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <a href="">
-                                            <button type="button" class="d-flex justify-content-center align-items-center">
-                                                <?php
-                                                    $nome_servidor = "sql10.freesqldatabase.com";
-                                                    $nome_usuario = "sql10345169";
-                                                    $senhaBanco = "UAzvU32VSN";
-                                                    $nome_banco = "sql10345169";
-                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
-                                                    $the100 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('The 100', '$logado')";
-                                                    $conecta->query($the100);
-                                                ?>
+                                        <form action="favoritosadd.php" method="POST">
+                                            <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
+                                                <input type="" name="filme" value="The 100" hidden>
+                                                <input type="" name="opcao" value="3" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
-                                        </a>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -202,25 +171,18 @@
                                     </a>
                                     <div class="card-body p-0">
                                         <a href="">
-                                            <h5 class="card-title">Breaking Bad</h5>
+                                            <h5 class="card-title">Breaking Bread</h5>
                                             <p class="card-text">Ação</p>
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <a href="">
-                                            <button type="button" class="d-flex justify-content-center align-items-center">
-                                                <?php
-                                                    $nome_servidor = "sql10.freesqldatabase.com";
-                                                    $nome_usuario = "sql10345169";
-                                                    $senhaBanco = "UAzvU32VSN";
-                                                    $nome_banco = "sql10345169";
-                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
-                                                    $breaking = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Breaking Bad', '$logado')";
-                                                    $conecta->query($breaking);
-                                                ?>
+                                        <form action="favoritosadd.php" method="POST">
+                                            <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
+                                                <input type="" name="filme" value="Breaking Bread" hidden>
+                                                <input type="" name="opcao" value="4" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
-                                        </a>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -237,20 +199,13 @@
                                         </a>
                                     </div>
                                     <div class="btn-play">
-                                        <a href="">
-                                            <button type="button" class="d-flex justify-content-center align-items-center">
-                                                <?php
-                                                    $nome_servidor = "sql10.freesqldatabase.com";
-                                                    $nome_usuario = "sql10345169";
-                                                    $senhaBanco = "UAzvU32VSN";
-                                                    $nome_banco = "sql10345169";
-                                                    $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
-                                                    $blacklist = "INSERT INTO favoritos(filmes, clientes_email) VALUES('The Black List', '$logado')";
-                                                    $conecta->query($blacklist);
-                                                ?>
+                                        <form action="favoritosadd.php" method="POST">
+                                            <button name="email" value="<?php echo $logado; ?>" class="d-flex justify-content-center align-items-center">
+                                                <input type="" name="filme" value="The BlackList" hidden>
+                                                <input type="" name="opcao" value="5" hidden>
                                                 <i class="fas fa-plus"></i>
                                             </button>
-                                        </a>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -279,10 +234,6 @@
                                         <a href="">
                                             <button type="button" class="d-flex justify-content-center align-items-center">
                                                 <?php
-                                                    $nome_servidor = "sql10.freesqldatabase.com";
-                                                    $nome_usuario = "sql10345169";
-                                                    $senhaBanco = "UAzvU32VSN";
-                                                    $nome_banco = "sql10345169";
                                                     $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
                                                     $naosei = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Nao Sei', '$logado')";
                                                     $conecta->query($naosei);
@@ -309,10 +260,6 @@
                                         <a href="">
                                             <button type="button" class="d-flex justify-content-center align-items-center">
                                                 <?php
-                                                    $nome_servidor = "sql10.freesqldatabase.com";
-                                                    $nome_usuario = "sql10345169";
-                                                    $senhaBanco = "UAzvU32VSN";
-                                                    $nome_banco = "sql10345169";
                                                     $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
                                                     $seila = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila', '$logado')";
                                                     $conecta->query($seila);
@@ -339,10 +286,6 @@
                                         <a href="">
                                             <button type="button" class="d-flex justify-content-center align-items-center">
                                                 <?php
-                                                    $nome_servidor = "sql10.freesqldatabase.com";
-                                                    $nome_usuario = "sql10345169";
-                                                    $senhaBanco = "UAzvU32VSN";
-                                                    $nome_banco = "sql10345169";
                                                     $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
                                                     $seila2 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila2', '$logado')";
                                                     $conecta->query($seila2);
@@ -369,10 +312,6 @@
                                         <a href="">
                                             <button type="button" class="d-flex justify-content-center align-items-center">
                                                 <?php
-                                                    $nome_servidor = "sql10.freesqldatabase.com";
-                                                    $nome_usuario = "sql10345169";
-                                                    $senhaBanco = "UAzvU32VSN";
-                                                    $nome_banco = "sql10345169";
                                                     $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
                                                     $seila3 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila3', '$logado')";
                                                     $conecta->query($seila3);
@@ -399,10 +338,6 @@
                                         <a href="">
                                             <button type="button" class="d-flex justify-content-center align-items-center">
                                                 <?php
-                                                    $nome_servidor = "sql10.freesqldatabase.com";
-                                                    $nome_usuario = "sql10345169";
-                                                    $senhaBanco = "UAzvU32VSN";
-                                                    $nome_banco = "sql10345169";
                                                     $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
                                                     $seila4 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila4', '$logado')";
                                                     $conecta->query($seila4);
@@ -429,10 +364,6 @@
                                         <a href="">
                                             <button type="button" class="d-flex justify-content-center align-items-center">
                                                 <?php
-                                                    $nome_servidor = "sql10.freesqldatabase.com";
-                                                    $nome_usuario = "sql10345169";
-                                                    $senhaBanco = "UAzvU32VSN";
-                                                    $nome_banco = "sql10345169";
                                                     $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
                                                     $seila5 = "INSERT INTO favoritos(filmes, clientes_email) VALUES('Seila5', '$logado')";
                                                     $conecta->query($seila5);
@@ -447,7 +378,8 @@
                         </div>
                     </div>
             </div>
-        </div>  
+        </div> 
+        <script language="javascript" type="text/javascript" src="js/javascript.js"></script>
         <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     	<script src="vendor/bootstrap/js/popper.js"></script>
     	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>

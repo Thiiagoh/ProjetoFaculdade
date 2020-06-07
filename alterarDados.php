@@ -30,7 +30,7 @@
         <div class="root">
             <nav class="nav-bar d-flex flex-column">
                 <div class="nav-bar-header d-flex pl-4 pt-4 pb-4">
-                    <img class="logo" src="images/icons/audio.png" class="card-img-top mb-3"/>
+                    <img class="logo" src="images/icons/logo.png" class="card-img-top mb-3"/>
                 </div>
                 <ul class="navbar-nav">
                     <li class="nav-item">

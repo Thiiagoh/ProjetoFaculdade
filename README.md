@@ -3,8 +3,8 @@
 ##### Descrição: Um site que permite você salvar e remover os filmes que estão disponíveis  no site.
 
 ## Informações dos Integrantes do Grupo
-### Nome: Beatriz Silva de Souza e Thiago Almeida da Silva
-### Mátricula: 201918794 e 201919985
+#### Nome: Beatriz Silva de Souza e Thiago Almeida da Silva
+#### Mátricula: 201918794 e 201919985
 
 #### Site online: http://projetofaculdade.unaux.com/index.html
 

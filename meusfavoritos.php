@@ -28,7 +28,25 @@
     </head>
     <body>
         <div class="root">
-            
+            <nav class="nav-bar d-flex flex-column">
+                <div class="nav-bar-header d-flex pl-4 pt-4 pb-4">
+                    <img class="logo" src="images/icons/audio.png" class="card-img-top mb-3"/>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="acesso.php" class="nav-link d-flex align-items-center">
+                            <i class="fa fa-home"></i>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link d-flex align-items-center">
+                            <i class="fas fa-video"></i>
+                            <span>Meus Favoritos</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
             <div class="top-bar">
                 <header id="header" class="d-flex position-relative">

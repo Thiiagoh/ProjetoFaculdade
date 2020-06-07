@@ -1,6 +1,6 @@
 # Projeto PHP - Conexão Filmes
 
-##### Descrição: Um site que permite você salvar os filmes que estão no site.
+##### Descrição: Um site que permite você salvar e remover os filmes que estão disponíveis  no site.
 
 ## Informações dos Integrantes do Grupo
 ### Nome: Beatriz Silva de Souza e Thiago Almeida da Silva

@@ -11,7 +11,7 @@
 ## Utilização Do Banco De Dados
 
 1. O banco de dados utilizado foi o: https://www.freesqldatabase.com/
-2. Para acessar o banco 
+2. Para acessar o banco:
 - **Host:** sql10.freesqldatabase.com
 - **Database name:** sql10345169
 - **Database user:** sql10345169

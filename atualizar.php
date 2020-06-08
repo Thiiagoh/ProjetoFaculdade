@@ -40,7 +40,7 @@
                         $nome_banco = "sql10345169";
                         $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
                         //Pegar Dado do Banco
-                        $tenta_achar = "SELECT * FROM clientes WHERE email='{$logado}' AND senha='{$senha}'";
+                        $tenta_achar = "SELECT * FROM clientes WHERE email='$logado' AND senha='$senha'";
                         $resultados = $conecta->query($tenta_achar);
                         if ($resultados->num_rows <= 0){
                             echo $logado;

@@ -22,14 +22,6 @@
             }
             $logado = $_SESSION['email'];
         ?>
-        <?php 
-            session_start();
-            if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)){
-                session_unset();
-                echo "<script>alert('Esta página só pode ser acessada por usuário logado');window.location.href = 'index.html';</script>";
-            }
-            $logado = $_SESSION['email'];
-        ?>
     </head>
     <body>
          <div class="limiter">
@@ -48,7 +40,7 @@
                             $nome_banco = "sql10345169";
                             $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
                             //Pegar Dado do Banco
-                            $tenta_achar = "SELECT * FROM clientes WHERE email='{$logado}' AND senha='{$senha}'";
+                            $tenta_achar = "SELECT * FROM clientes WHERE email='$logado' AND senha='$senha'";
                             $resultados = $conecta->query($tenta_achar);
                             if ($resultados->num_rows <= 0){
                                 echo 'Nenhum usuário encontrado!<br><br>';
@@ -58,8 +50,9 @@
                                 $user = $row['senha'];
                                 //Verificar se a senha do banco é igual ao que o usuário informou
                                 if ($user=$row['senha'] == $senha){
+                                    $sqlrem = "DELETE FROM favoritos WHERE clientes_email='$logado'";
                                     $sql = "DELETE FROM clientes WHERE email='$logado'";
-                                    if ($conecta->query($sql) === TRUE)
+                                    if ($conecta->query($sqlrem) AND  $conecta->query($sql) === TRUE)
                                         echo "Usuário apagado com sucesso!<br><br>";
                                     else
                                         echo "Erro ao apagar o usuario: " . $conecta->error."<br><br>";

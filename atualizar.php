@@ -43,8 +43,7 @@
                         $tenta_achar = "SELECT * FROM clientes WHERE email='$logado' AND senha='$senha'";
                         $resultados = $conecta->query($tenta_achar);
                         if ($resultados->num_rows <= 0){
-                            echo $logado;
-                            echo 'Nenhum usuário encontrado!<br><br>';
+                            echo 'Senha errada ou o ususário não existe!<br><br>';
                         }else{
                             $row = $resultado = $conecta->query($tenta_achar);
                             $row = $resultado->fetch_assoc();

@@ -16,6 +16,7 @@
 	- **Database name:** sql3347081
 	- **Database user:** sql3347081
 	- **Database password:** A8wU4hDHvj
+	- **Professor uma informação sobre esse banco é que ele é temporário.**
 3. O banco de dados tem duas tabelas: 
 	- clientes(email, senha)
 	- favoritos(filmes, nome, data, genero, cliente_email)

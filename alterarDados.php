@@ -19,6 +19,7 @@
         <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
         <?php 
             session_start();
+            include_once "conectar.php";
             if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)){
                 session_unset();
                 echo "<script>alert('Esta página só pode ser acessada por usuário logado');window.location.href = 'index.html';</script>";

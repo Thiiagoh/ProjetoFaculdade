@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <?php 
             session_start();
+            include_once "conectar.php";
             if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)){
                 session_unset();
                 echo "<script>alert('Esta página só pode ser acessada por usuário logado');window.location.href = 'index.html';</script>";
@@ -34,11 +35,7 @@
                             $senha2 = $_POST['senha2'];
 
                             //Conectar no mysql
-                            $nome_servidor = "sql10.freesqldatabase.com";
-                            $nome_usuario = "sql10345169";
-                            $senhaBanco = "UAzvU32VSN";
-                            $nome_banco = "sql10345169";
-                            $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
+                            $conecta = mysqli_connect($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
                             //Pegar Dado do Banco
                             $tenta_achar = "SELECT * FROM clientes WHERE email='$logado' AND senha='$senha'";
                             $resultados = $conecta->query($tenta_achar);

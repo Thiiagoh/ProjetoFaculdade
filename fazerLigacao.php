@@ -1,21 +1,17 @@
 <?php
     session_start();
-    
+    include_once "conectar.php";
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $local="sql10.freesqldatabase.com";
-    $usuario_BD="sql10345169";
-    $senha_BD="UAzvU32VSN";
-    $base="sql10345169";
+    $conecta = mysqli_connect($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
     
-    $tenta_conectar =  new mysqli($local,$usuario_BD,$senha_BD,$base);
-    if($tenta_conectar->connect_error === TRUE){    
-        die("Deu erro na conexão ". $tenta_conectar->connect_error);
+    if($conecta->connect_error === TRUE){    
+        die("Deu erro na conexão ". $conecta->connect_error);
     }
     
     $tenta_achar = "SELECT * FROM clientes WHERE email='$email' AND senha='$senha'";
-    $resultado = $tenta_conectar->query($tenta_achar);
+    $resultado = $conecta->query($tenta_achar);
     if ($resultado->num_rows > 0){
         $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senha;

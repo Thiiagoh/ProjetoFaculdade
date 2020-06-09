@@ -24,16 +24,13 @@
                        
                      <?php
                         //Receber as informações via formulario
+                        include_once "conectar.php";
                         $email = $_POST['email'];
                         $senha = $_POST['senha'];
                         $senha2 = $_POST['senha2'];
 
                         //Conectar no mysql
-                        $nome_servidor = "sql10.freesqldatabase.com";
-                        $nome_usuario = "sql10345169";
-                        $senhaBanco = "UAzvU32VSN";
-                        $nome_banco = "sql10345169";
-                        $conecta = new mysqli($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco);
+                        $conecta = mysqli_connect($nome_servidor, $nome_usuario, $senhaBanco, $nome_banco); 
 
                         //Inserir registro
                         if ($senha == $senha2){

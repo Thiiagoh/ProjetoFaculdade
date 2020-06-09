@@ -12,10 +12,10 @@
 
 1. O banco de dados utilizado foi o: https://www.freesqldatabase.com/
 2. Para acessar o banco:
-	- **Host:** sql10.freesqldatabase.com
-	- **Database name:** sql10345169
-	- **Database user:** sql10345169
-	- **Database password:** UAzvU32VSN
+	- **Host:** sql3.freesqldatabase.com
+	- **Database name:** sql3347081
+	- **Database user:** sql3347081
+	- **Database password:** A8wU4hDHvj
 3. O banco de dados tem duas tabelas: 
 	- clientes(email, senha)
 	- favoritos(filmes, nome, data, genero, cliente_email)
